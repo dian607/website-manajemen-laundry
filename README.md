@@ -8,26 +8,26 @@
 
 | Nama Anggota | NIM | Jobdesk / Peran |
 | :--- | :--- | :--- |
-| **Dian Agus Saputra** | 701230019 | - |
-| **David Ardi Nugraha** | 701230013 | - |
-| **M. Iqbal** | 701230046 | - |
-| **Nazarudin** | 701220274 | - |
+| **Dian Agus Saputra** | 701230019 | **Lead Developer:** Bertanggung jawab pada pengembangan Back-End (logika PHP), implementasi koneksi database MySQL, konfigurasi API transaksi, serta melakukan deployment website ke hosting server. |
+| **M. Iqbal** | 701230046 | **System Analyst & Designer:** Bertanggung jawab merancang seluruh Design sistem dalam SRS meliputi Use Case, ERD, Class Diagram, Sequence Diagram, dan Activity Diagram. |
+| **David Ardi Nugraha** | 701230013 | **Tester & Dokumentasi:** Bertanggung jawab menyusun Bab 1-3 pada dokumen SRS, melakukan User Acceptance Testing (UAT) untuk memastikan fitur berjalan sesuai kebutuhan, serta menyusun slide presentasi (PPT). |
+| **Nazaruddin** | 701220274 | **Data Administrator:** Bertanggung jawab menginput data sampel pelanggan dan layanan ke dalam database untuk persiapan demonstrasi, serta menyusun Bab 5 pada dokumen SRS (kebutuhan non-fungsional). |
 
 ## 3. Deskripsi Singkat Aplikasi
-[cite_start]Website Manajemen Transaksi Laundry adalah aplikasi berbasis web yang dirancang untuk membantu pemilik usaha laundry dalam mengelola operasional prncucian[cite: 64]. [cite_start]Sistem ini mengintegrasikan pencatatan pesanan, pengelolaan data pelanggan, manajemen jenis layanan, hingga pembuatan struk dan laporan keuangan sederhana dalam satu platform digital[cite: 65].
+Website Manajemen Transaksi Laundry adalah aplikasi berbasis web yang dirancang untuk membantu pemilik usaha laundry dalam mengelola operasional pencucian. Sistem ini mengintegrasikan pencatatan pesanan, pengelolaan data pelanggan, manajemen jenis layanan, hingga pembuatan struk dan laporan keuangan sederhana dalam satu platform digital.
 
 ## 4. Tujuan Sistem / Permasalahan yang Diselesaikan
 Aplikasi ini dibangun dengan tujuan:
-* [cite_start]**Efisiensi:** Menggantikan pencatatan manual menjadi digital untuk mengurangi risiko kehilangan data[cite: 66].
-* [cite_start]**Akurasi:** Meminimalisir kesalahan perhitungan biaya transaksi dengan sistem hitung otomatis[cite: 66].
-* [cite_start]**Dokumentasi:** Memastikan seluruh riwayat transaksi dan data pelanggan tersimpan rapi dan mudah dicari[cite: 44].
-* [cite_start]**Pelayanan:** Mempercepat proses pelayanan dengan adanya fitur estimasi waktu selesai dan cetak struk otomatis[cite: 114].
+* **Efisiensi:** Menggantikan pencatatan manual menjadi digital untuk mengurangi risiko kehilangan data.
+* **Akurasi:** Meminimalisir kesalahan perhitungan biaya transaksi dengan sistem hitung otomatis.
+* **Dokumentasi:** Memastikan seluruh riwayat transaksi dan data pelanggan tersimpan rapi dan mudah dicari.
+* **Pelayanan:** Mempercepat proses pelayanan dengan adanya fitur estimasi waktu selesai dan cetak struk otomatis.
 
 ## 5. Teknologi yang Digunakan
-[cite_start]Aplikasi ini dikembangkan menggunakan arsitektur 3-tier (Presentation, Logical, Database Layer) [cite: 228] dengan teknologi berikut:
-* [cite_start]**Bahasa Pemrograman (Backend):** PHP (Native) [cite: 228]
-* [cite_start]**Basis Data:** MySQL [cite: 228]
-* [cite_start]**Frontend:** HTML5, CSS3, JavaScript (Vanilla) [cite: 228]
+Aplikasi ini dikembangkan menggunakan arsitektur 3-tier (Presentation, Logical, Database Layer) dengan teknologi berikut:
+* **Bahasa Pemrograman (Backend):** PHP (Native)
+* **Basis Data:** MySQL
+* **Frontend:** HTML, CSS, JavaScript (Vanilla)
 * **Library Ikon:** Phosphor Icons
 * **Server Environment:** Laragon
 
@@ -40,9 +40,9 @@ Aplikasi ini dibangun dengan tujuan:
 
 ### b. Konfigurasi Database
 1.  Buka aplikasi **Laragon** dan klik tombol **Start All**.
-2.  Klik tombol **Database** untuk membuka HeidiSQL (atau akses phpMyAdmin jika sudah diinstall).
+2.  Klik tombol **Database** untuk membuka phpMyAdmin.
 3.  Buat database baru dengan nama: `laundry_db` (sesuai konfigurasi di file `koneksi.php`).
-4.  Import file database SQL yang disertakan dalam repository ini (misalnya `database.sql` atau `laundry_db.sql`) ke dalam database yang baru dibuat.
+4.  Import file database SQL yang disertakan dalam repository ini, misalnya `database.sql` ke dalam database yang baru dibuat.
 
 ### c. Menjalankan Project
 1.  Buka browser (Chrome/Edge).
@@ -51,14 +51,13 @@ Aplikasi ini dibangun dengan tujuan:
 4.  Halaman Login akan muncul.
 
 ## 7. Akun Demo
-[cite_start]Gunakan kredensial berikut untuk masuk sebagai Admin[cite: 69]:
+Gunakan kredensial berikut untuk masuk sebagai Admin:
 * **Username/Email:** `admin@laundry.com`
 * **Password:** `12345`
 *(Catatan: Pastikan data user ini sudah ada di tabel `users` pada database yang diimport)*.
 
-## 8. Link Deployment & Demo
-* **Link Deployment:** [Masukkan Link Hosting Jika Ada, atau tulis "-" jika localhost only]
-* **Link Demo Video:** [Masukkan Link YouTube Video Demo Kamu Disini]
+## 8. Link Deployment
+* **Link Deployment:** https://projectakhirmanajemenlaundry.wuaze.com/dashboard.html
 
 ## 9. Screenshot Halaman Utama
 
@@ -67,14 +66,14 @@ Aplikasi ini dibangun dengan tujuan:
 
 ## 10. Catatan Tambahan
 Beberapa hal mengenai batasan sistem ini berdasarkan SRS:
-* [cite_start]**Platform:** Aplikasi ini berbasis Web Desktop, belum tersedia versi Mobile (Android/iOS)[cite: 79].
-* [cite_start]**Integrasi Hardware:** Sistem belum terintegrasi dengan Barcode Scanner atau Printer Thermal otomatis[cite: 81].
-* [cite_start]**Online Booking:** Tidak ada fitur booking online oleh pelanggan; semua input dilakukan oleh Admin/Kasir[cite: 82].
+* **Platform:** Aplikasi ini berbasis Web Desktop, belum tersedia versi Mobile (Android/iOS).
+* **Integrasi Hardware:** Sistem belum terintegrasi dengan Barcode Scanner atau Printer Thermal otomatis.
+* **Online Booking:** Tidak ada fitur booking online oleh pelanggan; semua input dilakukan oleh Admin/Kasir.
 
 ## 11. Keterangan Tugas
 Project ini ditujukan untuk memenuhi **Tugas Final Project Mata Kuliah Rekayasa Perangkat Lunak**.
 
 * **Dosen Pengampu:** Ibu Dila Nurlaila, M.Kom
-* [cite_start]**Program studi:** Sistem Informasi[cite: 6]
-* [cite_start]**Fakultas:** Sains dan Teknologi [cite: 6]
-* [cite_start]**Universitas:** UIN Sultan Thaha Saifuddin Jambi [cite: 7]
+* **Program studi:** Sistem Informasi
+* **Fakultas:** Sains dan Teknologi
+* **Universitas:** UIN Sultan Thaha Saifuddin Jambi
