@@ -2,10 +2,10 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "laundry_db";
+$host = "sql312.infinityfree.com";
+$user = "if0_40495976";
+$pass = "R6FCdG09uFD3k";
+$db   = "if0_40495976_laundry";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
